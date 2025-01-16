@@ -17,11 +17,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Azure Virtual Machine
+- Internet Information Services (IIS)
+- PHP Manager
+- Rewrite Module
+- VS Redist
+- MySQL
+- Heidi SQL
+- osTicket v1.15.8
+- Link to downloads: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+
 
 <h2>Installation Steps</h2>
 
@@ -29,7 +34,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+1. The first thing you are going to do is create a virtual machine by going to https://portal.azure.com/. Setup your virtual machine with Windows 10 Pro 22H2, and you'll want to create the virtual machine with at least 2VPCUs and 8 GiB of RAM.
+
+2. Once you've created your virtual machine, you will want to connect to it by using the public ip address the VM is setup with. You'll connect using the remote desktop connection app. 
 </p>
 <br />
 
