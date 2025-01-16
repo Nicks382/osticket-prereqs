@@ -47,7 +47,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+3. Once you hace connected to your virtual machine, you will want to go to your control panel. From the control panel, open up programs. Select, turn Windows features on and off. 
+</p>
+<p>
+4. You'll want to install/enable IIS in Windows in with CGI and Common HTTP Features
+
+  - World Wide Web Services -> Application Development Features -> [X] CGI [X] Common HTTP Features
 </p>
 <br />
 
@@ -55,6 +60,45 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<i> NOTE</i> Make sure all Common Features are checked. 
+
+To make sure the IIS is is installed/enabled, go to a browswer of your choice and search for 127.0.0.1. It should look something like this.
 </p>
 <br />
+<p>
+5. Now that the IIS i s enabled, from the Installation Files, download and install PHP Manager fro IIS (PHPManagerForIIS_V1.5.0.msi), go throught he install wizard and complete the install. 
+</p>
+<br />
+<p>
+6. Next from the Installation Flies, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
+</p>
+<br />
+<p>
+7. Create a folder in the C drive called PHP.
+</p>
+<br />
+<p>
+8. From the installation Flies, download PHP 7.3.8 (php-7.3.88-nts-Win32-VC15-x866.zip) and unzip the contents into C:\PHP
+</p>
+<br />
+<p>
+!! ATTENTION !! If this appears, choose to "Keep" the file:
+</p>
+
+<br />
+
+<p>
+9. Once you have downloaded and extracted the zip file into the PHP folder on the C drive, download and install the VC_redist.86.exe from the installation files. Go through the setup wizard to finish setting up and installing the VC_redist.x86.exe
+</p>
+<br />
+<p>
+10. Download and install MYSQL 5.5.62 (mysql-5.5.62-win32.msi) Run the setup wizard. Typical Setup -> Launch Configuration Wizard (after install) -> Standard Configuration ->
+</p>
+<br />
+<p>
+Make the new root password: Password1
+</p>
+<br />
+<p>
+Execute the process on the next page. 
+</p>
