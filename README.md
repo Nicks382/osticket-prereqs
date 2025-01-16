@@ -35,9 +35,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 1. The first thing you are going to do is create a virtual machine by going to https://portal.azure.com/. Setup your virtual machine with Windows 10 Pro 22H2, and you'll want to create the virtual machine with at least 2VPCUs and 8 GiB of RAM.
-
+</p>
+<br /> 
+<p>
 2. Once you've created your virtual machine, you will want to connect to it by using the public ip address the VM is setup with. You'll connect using the remote desktop connection app. 
 </p>
+
 <br />
 
 <p>
