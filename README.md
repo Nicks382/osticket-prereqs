@@ -128,3 +128,56 @@ Restart the IIS server.
 
 Reload IIS again.
 </p>
+<br />
+<p>
+14. On IIS go to sites -> Defualt -> osTicket -On the right, click "Browse *80."
+
+Some extensions are not enabled on the osTicket browser.
+
+To enable the extensions: -Go back to IIS, sites -> Default -> osTicket -Doble click PHP Manager -Click "Enable or disable an extension"
+</p>
+<br />
+<p>
+We will want to enable three extensions from here.
+
+1. php_imap.dll
+2. php_intl.dll
+3. php_opcache.dll
+   
+</p>
+<br />
+<p>
+15. Once we have those extensions in IIS, we are going to want to rename one of the files in our osTicket folder. Go into the file explorer and search C:\inetpub\wwwroor\osTicket\include\ost-sampleconfig.php
+
+We are going to rename the ost-sampleconfig.php to ost-config.php
+
+Now that we have rename the files, right click on the file and go to properties. From there click security click on advance and disable the inheritance. We will select "Remove all inherited permissions" from this object
+
+Click Add
+
+Select a prinicpal
+
+Type "Everyone" in the box.
+
+Make sure "Full Control" and all other boxes are checked. 
+
+Click Apply and Ok
+
+Once that is done we will contine to setup osTicket in the browser. Click Continue onn the osTicket browser page. Fill out the page as required except the Database Settings at the bottom of the page. We will get to that. 
+
+We will want to download and install HeidiSQL from the Installation Files.
+
+When the program is open we will create a new session in it.
+
+Once we are conncted to the session we will go back to the browser to finish setting everything up. Under the Database Settings in the browser the username will be "root" and the password will be "Password1"
+
+We will now create a new database within HeidiSQL. in Heidi right click on the left side where it says "Unnamed", select "create new, and then select "database. Name the new database osTicket. Once we have the new database setup, go back to the osTicket browser and under MySQL Database, type in "osTicket".
+
+The last step is to do some clean up. We will want to delete the setupd folder in our system. -Delete: C:\inetpub\wwwroor\osTicket\setup. ONly delete the setup folder and nothing else. 
+
+We then will want to set the permissions back to "Read" only in the ost-config.php file.
+
+The last step after that is to login to osTicket on the browser. 
+
+Congrats! You have now successfully installed and setup osTicket!
+</p>
