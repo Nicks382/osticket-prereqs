@@ -66,7 +66,7 @@ To make sure the IIS is is installed/enabled, go to a browswer of your choice an
 </p>
 <br />
 <p>
-5. Now that the IIS i s enabled, from the Installation Files, download and install PHP Manager fro IIS (PHPManagerForIIS_V1.5.0.msi), go throught he install wizard and complete the install. 
+5. Now that the IIS i s enabled, from the Installation Files, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi), go through the install wizard and complete the install. 
 </p>
 <br />
 <p>
@@ -101,4 +101,30 @@ Make the new root password: Password1
 <br />
 <p>
 Execute the process on the next page. 
+</p>
+<br />
+<p>
+11. Now that we have the files downloaded and installed we will want to search for IIS in the windows search bar. Open IIS as an administrator. The program should look like this.
+</p>
+<br />
+<p>
+12. We will now want to register PHP from within IIS. Click on PHP Manager
+</p>
+<br />
+<p>
+Register new PHP version.
+</p>
+<br />
+<p>
+You will want to provide a path to the php executable file (php-cgi.exe). Go to C drive -> PHP -> click on php-cgi file. 
+</p>
+<br />
+<p>
+Restart the IIS server.
+</p>
+<br />
+<p>
+13. Install osTicket v1.15.8 -Download osTicket from the Installation Files Folder -Extract and copy "upload" folder to c:\inetpub\wwwroot -Within c:\inetpub\root, Rename "upload" to "osTicket"
+
+Reload IIS again.
 </p>
